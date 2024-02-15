@@ -1,0 +1,1 @@
+{"version":3,"file":"geoserver.module.js","sourceRoot":"","sources":["../../src/geoserver/geoserver.module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAAwC;AACxC,2DAAuD;AACvD,iEAA6D;AAMtD,IAAM,eAAe,GAArB,MAAM,eAAe;CAAI,CAAA;AAAnB,eAAe;IAJ3B,IAAA,eAAM,EAAC;QACN,WAAW,EAAE,CAAC,0CAAmB,CAAC;QAClC,SAAS,EAAE,CAAC,oCAAgB,CAAC;KAC9B,CAAC;GACW,eAAe,CAAI;AAAnB,0CAAe"}

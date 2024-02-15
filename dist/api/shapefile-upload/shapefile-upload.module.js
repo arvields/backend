@@ -11,13 +11,14 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const shapefile_upload_service_1 = require("./shapefile-upload.service");
 const shapefile_upload_entity_1 = require("./entities/shapefile-upload.entity");
+const shapefile_upload_controller_1 = require("./shapefile-upload.controller");
 let ShapefileUploadModule = class ShapefileUploadModule {
 };
 ShapefileUploadModule = __decorate([
     (0, common_1.Module)({
         imports: [typeorm_1.TypeOrmModule.forFeature([shapefile_upload_entity_1.ShapefileData])],
         providers: [shapefile_upload_service_1.ShapefileUploadService],
-        exports: [shapefile_upload_service_1.ShapefileUploadService],
+        controllers: [shapefile_upload_controller_1.ShapefileUploadController],
     })
 ], ShapefileUploadModule);
 exports.ShapefileUploadModule = ShapefileUploadModule;

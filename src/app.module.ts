@@ -10,6 +10,9 @@ import { GeoPolygonModule } from './api/geo-polygon/geo-polygon.module';
 import { GeoPolygon } from './api/geo-polygon/entities/geo-polygon.entity';
 import { ShapefileUploadModule } from './api/shapefile-upload/shapefile-upload.module';
 import { ShapefileData } from './api/shapefile-upload/entities/shapefile-upload.entity';
+import { GeoserverModule } from './geoserver/geoserver.module';
+import { GeoServerService } from './geoserver/geoserver.service';
+
 
 @Module({
   imports: [
@@ -28,8 +31,9 @@ import { ShapefileData } from './api/shapefile-upload/entities/shapefile-upload.
     OwnerModule,
     GeoPolygonModule,
     ShapefileUploadModule,
+    GeoserverModule,
   ],
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, GeoServerService],
 })
 export class AppModule { }

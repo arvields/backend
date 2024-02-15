@@ -1,11 +1,11 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('shapefile_data')
+@Entity()
 export class ShapefileData {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({ type: 'geometry', srid: 4326 })
+    @Column({ name: 'geom', type: 'geometry', srid: 4326 })
     geometry: any;
 
 }

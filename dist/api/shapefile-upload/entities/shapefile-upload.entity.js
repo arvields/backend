@@ -18,11 +18,11 @@ __decorate([
     __metadata("design:type", Number)
 ], ShapefileData.prototype, "id", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'geometry', srid: 4326 }),
+    (0, typeorm_1.Column)({ name: 'geom', type: 'geometry', srid: 4326 }),
     __metadata("design:type", Object)
 ], ShapefileData.prototype, "geometry", void 0);
 ShapefileData = __decorate([
-    (0, typeorm_1.Entity)('shapefile_data')
+    (0, typeorm_1.Entity)()
 ], ShapefileData);
 exports.ShapefileData = ShapefileData;
 //# sourceMappingURL=shapefile-upload.entity.js.map

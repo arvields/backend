@@ -19,6 +19,8 @@ const geo_polygon_module_1 = require("./api/geo-polygon/geo-polygon.module");
 const geo_polygon_entity_1 = require("./api/geo-polygon/entities/geo-polygon.entity");
 const shapefile_upload_module_1 = require("./api/shapefile-upload/shapefile-upload.module");
 const shapefile_upload_entity_1 = require("./api/shapefile-upload/entities/shapefile-upload.entity");
+const geoserver_module_1 = require("./geoserver/geoserver.module");
+const geoserver_service_1 = require("./geoserver/geoserver.service");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -39,9 +41,10 @@ AppModule = __decorate([
             owner_module_1.OwnerModule,
             geo_polygon_module_1.GeoPolygonModule,
             shapefile_upload_module_1.ShapefileUploadModule,
+            geoserver_module_1.GeoserverModule,
         ],
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        providers: [app_service_1.AppService, geoserver_service_1.GeoServerService],
     })
 ], AppModule);
 exports.AppModule = AppModule;
